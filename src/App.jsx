@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from "react";
+
 import CatalogueLine from './components/CatalogueLine'
 import './App.css'
 import Header from './components/Header';
@@ -157,6 +159,8 @@ const doublebed = [
   { title:"Jaipuri Bedsheet", size:"Double", url:"/ALL_IMAGES/images (136).jpeg" },
   { title:"Jaipuri Bedsheet", size:"Double", url:"/ALL_IMAGES/images (137).jpeg" },
 ];
+const [visible, setVisible] = useState(12);
+
 
 
   // const singlebed = [
@@ -198,7 +202,14 @@ const doublebed = [
     <div className='App'>
       <Header />
 
-      <CatalogueLine cardtitle ={doublebed} />
+    <CatalogueLine cardtitle={doublebed.slice(0, visible)} />
+    {visible < doublebed.length && (
+    <button className="loadmore" onClick={() => setVisible(visible + 12)}>
+    Load More
+      </button>
+    )}
+
+
       {/* <h1 className='type'>Single Bed</h1>
       <CatalogueLine cardtitle ={singlebed} /> */}
       <Footer />
