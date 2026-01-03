@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Catalogue = (props) => {
 
@@ -17,7 +17,10 @@ const Catalogue = (props) => {
 
   return (
     <div className="Catalogue">
-      <img src={props.url} alt={props.title} loading="lazy" decoding="async"/>
+      <a href={props.url} target="_blank" rel="noopener noreferrer">
+        <img src={props.url} alt={props.title} loading="lazy" decoding="async" />
+      </a>
+
 
 
       <span className="badge">Hot Deal</span>
