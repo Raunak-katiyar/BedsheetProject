@@ -17,7 +17,7 @@ const Catalogue = (props) => {
 
   return (
     <div className="Catalogue">
-      <img src={props.url} alt={props.title} loading="lazy"/>
+      <img src={props.url} alt={props.title} loading="lazy" decoding="async"/>
 
 
       <span className="badge">Hot Deal</span>
