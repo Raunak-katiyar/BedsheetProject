@@ -152,8 +152,46 @@ footer{
 
   .Catalogue{
     width:100%;
-    height:240px;
+    height:220px;
   }
+  .product-body{
+  background:linear-gradient(
+    180deg,
+    rgba(0,0,0,.08),
+    rgba(0,0,0,.6)
+  );
+}
+
+    .product-body{
+    padding:10px;
+  }
+
+  .product-body h3{
+    font-size:13px;
+  }
+
+  .subtitle{
+    font-size:11px;
+  }
+
+  .price{
+    font-size:11px;
+  }
+
+  .size{
+    font-size:10px;
+  }
+
+  .btn{
+    font-size:11px;
+    padding:6px 0;
+  }
+
+  .badge{
+    font-size:9px;
+    padding:3px 10px;
+  }
+
 }
 
 .main-title{
