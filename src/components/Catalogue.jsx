@@ -30,8 +30,8 @@ const Catalogue = (props) => {
         <p className="subtitle">{props.subtitle}</p>
 
         <p className="price">
-          <span className="new">₹799</span>
-          <del>₹1999</del>
+          <span className="new ">₹1199</span>
+          <del>₹2999</del>
           <span className="off">60% off</span>
         </p>
         <p className="size">Size: <span>{props.size}</span></p>
